@@ -1,0 +1,20 @@
+<p>Lista de Cursos</p>
+<p>Pagina: {{pagina}} </p>
+
+
+<table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let teacher of teachers">
+        <th scope="row">{{teacher.id}}</th>
+        <td [routerLink]="['teacher',teacher.id]"> {{teacher.name}}</td>
+
+      </tr>
+
+    </tbody>
+  </table>
