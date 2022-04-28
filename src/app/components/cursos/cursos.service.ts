@@ -3,24 +3,15 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class CursosservisesService {
+export class CursosService {
 
-  teachers = [{
-    id: 1,
-    name: "Michael Jordan",
-
-  },
-  {
-
-    id: 2,
-    name: 'Jorge Paulo Leman'
-  }
+  private cursos: any[] = [
+    { id: 2, name: 'Nodejs', teacher: 'jordan' },
+    { id: 5, name: 'basket', teacher: 'paulo leman' }
   ]
 
-  constructor() { }
-
   getCursos() {
-    return this.teachers
+    return this.cursos
   }
 
   getCurso(id: number) {
@@ -35,5 +26,10 @@ export class CursosservisesService {
 
     }
     return null;
+
+    
   }
+  constructor() { }
+
+
 }

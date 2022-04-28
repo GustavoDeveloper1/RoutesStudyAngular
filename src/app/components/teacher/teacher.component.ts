@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { CursosservisesService } from 'src/app/cursosservises.service';
+import { CursosservisesService } from 'src/app/teacherservises.service';
 
 @Component({
   selector: 'app-cursos',
-  templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.scss']
+  templateUrl: './teacher.component.html',
+  styleUrls: ['./teacher.component.scss']
 })
-export class CursosComponent implements OnInit {
+export class TeacherComponent implements OnInit {
 
   teachers: any[] = []
   pagina!: number;

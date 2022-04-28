@@ -1,0 +1,26 @@
+<div class="container row">
+    <p>Lista de Cursos</p>
+
+  
+    <table class="table table-primary col-5">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Teacher</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let curso of cursos">
+          <th scope="row">{{curso.id}}</th>
+          <td [routerLink]="curso.id"> {{curso.name}}</td>
+          <td > {{curso.teacher}}</td>
+          
+  
+        </tr>
+  
+      </tbody>
+    </table>
+    <router-outlet class="col-5"></router-outlet>
+  </div>
+

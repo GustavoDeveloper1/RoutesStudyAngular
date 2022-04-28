@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="login-container">
+    <h3>Tela de Login</h3>
+
+    <div class="container mb-5">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Teacher</span>
+            <input type="text" class="form-control active" [(ngModel)]="usuario.nome">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+            <input type="password" class="form-control active" [(ngModel)]="usuario.password">
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Submit" (click)="fazerLogin()">
+
+    </div>
+</div>

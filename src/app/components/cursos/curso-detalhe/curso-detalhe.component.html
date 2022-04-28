@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card" style="width: 18rem;">
+
+        <div class="card-body">
+            <h3 class="card-title">Detalhamento do Curso</h3>
+            <p>Id do Curso: {{curso.id}}</p>
+            <p>Nome do Curso: {{curso.name}}</p>
+            <p>Teacher: {{curso.teacher}}</p>
+            <td> <button [routerLink]="[curso.id,'editar']" (click)="editarContato()"
+                    class="btn btn-warning">Editar</button>
+            </td>
+        </div>
+
+    </div>
+</div>

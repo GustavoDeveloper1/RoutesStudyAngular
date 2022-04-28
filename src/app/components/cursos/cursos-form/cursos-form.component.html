@@ -1,0 +1,20 @@
+<div class="container">
+    <h4>Cursos Form</h4>
+
+    <form class="col-5">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" disabled>Id Curso</label>
+            <input [(ngModel)]="curso.id" disabled type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input  class="form-control"  [(ngModel)]="curso.name" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Teacher</label>
+            <input  class="form-control"  [(ngModel)]="curso.teacher" [ngModelOptions]="{standalone: true}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

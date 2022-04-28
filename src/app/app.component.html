@@ -1,24 +1,18 @@
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" *ngIf="showMenu">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a routerLinkActive="active" routerLink="" style="color: aliceblue;" class="nav-link active" aria-current="page" href="#">Home</a>
-        <a routerLinkActive="active" routerLink="/teacher" [queryParams]="{pagina:1}" style="color: aliceblue;" class="nav-link">Features</a>
-        <a routerLinkActive="active" [routerLink]="['teacher', idcurso.value]"  style="color: aliceblue;" class="nav-link">Pricing</a>
-
+        <a routerLinkActive="active" routerLink="/teacher"  style="color: aliceblue;" class="nav-link">Professores</a>
+        <a routerLinkActive="active" routerLink="/cursos"  style="color: aliceblue;" class="nav-link">Cursos</a>
+        <a routerLinkActive="active" routerLink="/login"  style="color: aliceblue;" class="nav-link">Login</a>
       </div>
     </div>
   </div>
 </nav>
 
-<div class="container">
 
-  <p>Entre com o id do curso</p>
-  <input type="text" #idcurso >
-
-
-</div>
 
 <router-outlet></router-outlet>
