@@ -7,6 +7,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 import { CursosService } from './cursos.service';
 import { FormsModule } from '@angular/forms';
+import { CursosDeactivate } from './cursoDeactivated.guard';
 
 @NgModule({
 
@@ -22,7 +23,7 @@ import { FormsModule } from '@angular/forms';
         CursosFormComponent,
         CursoDetalheComponent,
     ],
-    providers: [CursosService],
+    providers: [CursosService, CursosDeactivate],
 
 })
 
